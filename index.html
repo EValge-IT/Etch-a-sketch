@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-sketch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><h1>Etch-a-sketch</h1></header>
+    <script src="javascript.js"></script>
+
+    <main>
+        <div class="container">
+            <div class="flex-small">
+                <h2>Controls</h2>
+                <input type="range" min="10" max="64" id="numberSelector">
+                <p><button onclick="generateGrid()" id="submit">Create Grid</button></p>
+
+                <p><button onclick="resetGrid()" >Reset Game</button></p>
+                <p>Change Etch Colour</p>
+                <p><input type="color" id="colorPicker"></p>
+            </div>
+            <div class="flex-large">
+                <h2 id="game">Game</h2>
+                <div class="gameWindow" id="gameWindow">
+
+                </div>
+                
+            </div>
+        </div>
+    </main>
+</body>
+</html>
